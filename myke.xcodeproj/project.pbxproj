@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2085A6AD683EC34A01F18126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915491AC43C557C7780F867 /* AppDelegate.swift */; };
+		335DF9922C036584C0AC21B3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A088CBB9E2865E837FF8FF4 /* KeyboardViewController.swift */; };
+		39092A239B9C2B7A43F9E15A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55337650CE38BFA1D59E49FE /* SceneDelegate.swift */; };
+		786FCA7E21F4857F0734275C /* InputEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD98205481B6EA92AB08EB1 /* InputEngine.swift */; };
+		7B1E818CBA2BB8F910600B5A /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */; };
+		8220213D96450F4590F34527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91925091A8B56FE52126A14 /* ViewController.swift */; };
+		9E0CD35870A2824460E88B0A /* mykeKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC2C828C04638D6D8CFB138F /* InputEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD98205481B6EA92AB08EB1 /* InputEngine.swift */; };
+		C5ED2BCFE54A040750169092 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */; };
+		CE1CA83F376A88B08B0731DA /* InputEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE8B914F17B4808228D99E /* InputEngineTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5252280F40FBD3425C0EEB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9A01CEE2D6275D8D278DFD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1DEC15D8F0EDA48ED4FDCE6;
+			remoteInfo = myke;
+		};
+		FE5615785F4D75618FAE16B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9A01CEE2D6275D8D278DFD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2115771C670526934EE47E0D;
+			remoteInfo = mykeKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AC1B4102360336E762AF4EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9E0CD35870A2824460E88B0A /* mykeKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A088CBB9E2865E837FF8FF4 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0CD03A68CAECAE4A8740D6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24AE8B914F17B4808228D99E /* InputEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEngineTests.swift; sourceTree = "<group>"; };
+		55337650CE38BFA1D59E49FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66B2614548DF65B178970908 /* myke.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = myke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = mykeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91925091A8B56FE52126A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB1936AB348EA51A69516AA4 /* mykeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = mykeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		F915491AC43C557C7780F867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD98205481B6EA92AB08EB1 /* InputEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		625989769974E63951E637CC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				24AE8B914F17B4808228D99E /* InputEngineTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		67DE8137C2A5546EFDE3C278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B2614548DF65B178970908 /* myke.app */,
+				701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */,
+				AB1936AB348EA51A69516AA4 /* mykeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FD083FAB92C8E9156850A24 /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0CD03A68CAECAE4A8740D6F4 /* Info.plist */,
+				0A088CBB9E2865E837FF8FF4 /* KeyboardViewController.swift */,
+			);
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		A0C12B1CE34DC78EDCCA0F58 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F915491AC43C557C7780F867 /* AppDelegate.swift */,
+				55337650CE38BFA1D59E49FE /* SceneDelegate.swift */,
+				A91925091A8B56FE52126A14 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC8B0A61BE85C5EF3F16E1E7 = {
+			isa = PBXGroup;
+			children = (
+				A0C12B1CE34DC78EDCCA0F58 /* App */,
+				8FD083FAB92C8E9156850A24 /* KeyboardExtension */,
+				E0D8DACC5424E34FB465F2E0 /* Shared */,
+				625989769974E63951E637CC /* Tests */,
+				67DE8137C2A5546EFDE3C278 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0D8DACC5424E34FB465F2E0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FAD98205481B6EA92AB08EB1 /* InputEngine.swift */,
+				EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2115771C670526934EE47E0D /* mykeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A35EB49772655107EDF6E040 /* Build configuration list for PBXNativeTarget "mykeKeyboard" */;
+			buildPhases = (
+				D38ADDE6FE8BDD5EEF59F808 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mykeKeyboard;
+			packageProductDependencies = (
+			);
+			productName = mykeKeyboard;
+			productReference = 701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		837041E0DFDCEBC580BA93FF /* mykeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F9051F36A7AD62832D4895F /* Build configuration list for PBXNativeTarget "mykeTests" */;
+			buildPhases = (
+				DCD7C49BEAA20E6C72AB0EF6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001B126C22C197628852678B /* PBXTargetDependency */,
+			);
+			name = mykeTests;
+			packageProductDependencies = (
+			);
+			productName = mykeTests;
+			productReference = AB1936AB348EA51A69516AA4 /* mykeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1DEC15D8F0EDA48ED4FDCE6 /* myke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A69CD768A418425076E9C6E1 /* Build configuration list for PBXNativeTarget "myke" */;
+			buildPhases = (
+				D7F9863352C8ADA13B264913 /* Sources */,
+				5AC1B4102360336E762AF4EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045334355A532CDC03E5AFE6 /* PBXTargetDependency */,
+			);
+			name = myke;
+			packageProductDependencies = (
+			);
+			productName = myke;
+			productReference = 66B2614548DF65B178970908 /* myke.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9A01CEE2D6275D8D278DFD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					2115771C670526934EE47E0D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					837041E0DFDCEBC580BA93FF = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					E1DEC15D8F0EDA48ED4FDCE6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F55BF818A399E268DB94309 /* Build configuration list for PBXProject "myke" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CC8B0A61BE85C5EF3F16E1E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 67DE8137C2A5546EFDE3C278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1DEC15D8F0EDA48ED4FDCE6 /* myke */,
+				2115771C670526934EE47E0D /* mykeKeyboard */,
+				837041E0DFDCEBC580BA93FF /* mykeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D38ADDE6FE8BDD5EEF59F808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC2C828C04638D6D8CFB138F /* InputEngine.swift in Sources */,
+				C5ED2BCFE54A040750169092 /* KeyboardView.swift in Sources */,
+				335DF9922C036584C0AC21B3 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F9863352C8ADA13B264913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2085A6AD683EC34A01F18126 /* AppDelegate.swift in Sources */,
+				786FCA7E21F4857F0734275C /* InputEngine.swift in Sources */,
+				7B1E818CBA2BB8F910600B5A /* KeyboardView.swift in Sources */,
+				39092A239B9C2B7A43F9E15A /* SceneDelegate.swift in Sources */,
+				8220213D96450F4590F34527 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD7C49BEAA20E6C72AB0EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1CA83F376A88B08B0731DA /* InputEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001B126C22C197628852678B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1DEC15D8F0EDA48ED4FDCE6 /* myke */;
+			targetProxy = F5252280F40FBD3425C0EEB2 /* PBXContainerItemProxy */;
+		};
+		045334355A532CDC03E5AFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2115771C670526934EE47E0D /* mykeKeyboard */;
+			targetProxy = FE5615785F4D75618FAE16B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A0BB0B22CE343507DB6C935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		3352BA3DB123AF373479BD62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myke.app/myke";
+			};
+			name = Release;
+		};
+		4AC6B866EAA4E2474DD886F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		5EE5A03BA4308BEC238F53DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		734400895A632B0C601F3C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = myke;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A825C39C7F551EECCB413C9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.keyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BBD8FA4020E2727C572BF682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = myke;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E6215D270F68D64957EEBFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myke.app/myke";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F9051F36A7AD62832D4895F /* Build configuration list for PBXNativeTarget "mykeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6215D270F68D64957EEBFC4 /* Debug */,
+				3352BA3DB123AF373479BD62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F55BF818A399E268DB94309 /* Build configuration list for PBXProject "myke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC6B866EAA4E2474DD886F0 /* Debug */,
+				0A0BB0B22CE343507DB6C935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A35EB49772655107EDF6E040 /* Build configuration list for PBXNativeTarget "mykeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A825C39C7F551EECCB413C9B /* Debug */,
+				5EE5A03BA4308BEC238F53DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A69CD768A418425076E9C6E1 /* Build configuration list for PBXNativeTarget "myke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD8FA4020E2727C572BF682 /* Debug */,
+				734400895A632B0C601F3C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9A01CEE2D6275D8D278DFD6 /* Project object */;
+}

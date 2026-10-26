@@ -1,0 +1,75 @@
+name: myke
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+targets:
+  myke:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.myke
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: myke
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        TARGETED_DEVICE_FAMILY: "1"
+    dependencies:
+      - target: mykeKeyboard
+  mykeKeyboard:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: KeyboardExtension
+      - path: Shared
+    info:
+      path: KeyboardExtension/Info.plist
+      properties:
+        CFBundleDisplayName: myke
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.keyboard-service
+          NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).KeyboardViewController"
+          NSExtensionAttributes:
+            IsASCIICapable: false
+            PrefersRightToLeft: false
+            PrimaryLanguage: ja-JP
+            RequestsOpenAccess: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.myke.keyboard
+        SKIP_INSTALL: YES
+        TARGETED_DEVICE_FAMILY: "1"
+  mykeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: myke
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.myke.tests
+schemes:
+  myke:
+    build:
+      targets:
+        myke: all
+        mykeKeyboard: all
+        mykeTests: [test]
+    test:
+      targets:
+        - mykeTests
+
