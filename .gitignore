@@ -1,4 +1,7 @@
 .build/
 .build-tests/
+.build-xcode/
+.DS_Store
+.swiftpm/
 xcuserdata/
 *.xcuserstate

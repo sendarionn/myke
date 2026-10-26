@@ -13,7 +13,7 @@ final class KeyboardViewController: UIInputViewController, KeyboardViewDelegate 
             keyboardView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             keyboardView.topAnchor.constraint(equalTo: view.topAnchor),
             keyboardView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            view.heightAnchor.constraint(equalToConstant: 300)
+            view.heightAnchor.constraint(equalToConstant: 348)
         ])
     }
 

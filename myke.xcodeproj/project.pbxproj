@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		2085A6AD683EC34A01F18126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915491AC43C557C7780F867 /* AppDelegate.swift */; };
 		335DF9922C036584C0AC21B3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A088CBB9E2865E837FF8FF4 /* KeyboardViewController.swift */; };
+		3405AE13906014B74F7AD957 /* KanaKanjiConversionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AC2804579A6A72A536508 /* KanaKanjiConversionEngine.swift */; };
 		39092A239B9C2B7A43F9E15A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55337650CE38BFA1D59E49FE /* SceneDelegate.swift */; };
+		57C59FFA74116B9019E63B41 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 854D690C2ECE45005D7535B5 /* KanaKanjiConverterModuleWithDefaultDictionary */; };
+		75C9C0972AD8EDE7263CE34F /* KanaKanjiConversionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AC2804579A6A72A536508 /* KanaKanjiConversionEngine.swift */; };
 		786FCA7E21F4857F0734275C /* InputEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD98205481B6EA92AB08EB1 /* InputEngine.swift */; };
 		7B1E818CBA2BB8F910600B5A /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */; };
 		8220213D96450F4590F34527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91925091A8B56FE52126A14 /* ViewController.swift */; };
 		9E0CD35870A2824460E88B0A /* mykeKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A82E2F65CC2B8531208C2E86 /* KanaKanjiConversionEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52643FE4D1E2D75BF8A893CD /* KanaKanjiConversionEngineTests.swift */; };
 		AC2C828C04638D6D8CFB138F /* InputEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD98205481B6EA92AB08EB1 /* InputEngine.swift */; };
 		C5ED2BCFE54A040750169092 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */; };
 		CE1CA83F376A88B08B0731DA /* InputEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AE8B914F17B4808228D99E /* InputEngineTests.swift */; };
+		DE0534553F3DF854C22AA1D3 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 553F070BBD14A5B19AA4E71B /* KanaKanjiConverterModuleWithDefaultDictionary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,21 +59,43 @@
 		0A088CBB9E2865E837FF8FF4 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		0CD03A68CAECAE4A8740D6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		24AE8B914F17B4808228D99E /* InputEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEngineTests.swift; sourceTree = "<group>"; };
+		52643FE4D1E2D75BF8A893CD /* KanaKanjiConversionEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaKanjiConversionEngineTests.swift; sourceTree = "<group>"; };
 		55337650CE38BFA1D59E49FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		66B2614548DF65B178970908 /* myke.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = myke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = mykeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91925091A8B56FE52126A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB1936AB348EA51A69516AA4 /* mykeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = mykeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2AC2804579A6A72A536508 /* KanaKanjiConversionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaKanjiConversionEngine.swift; sourceTree = "<group>"; };
 		EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		F915491AC43C557C7780F867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD98205481B6EA92AB08EB1 /* InputEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		918EC7AC89304375999283D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C59FFA74116B9019E63B41 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79FCBAB7E4D53F89151FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0534553F3DF854C22AA1D3 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		625989769974E63951E637CC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				24AE8B914F17B4808228D99E /* InputEngineTests.swift */,
+				52643FE4D1E2D75BF8A893CD /* KanaKanjiConversionEngineTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -117,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD98205481B6EA92AB08EB1 /* InputEngine.swift */,
+				CF2AC2804579A6A72A536508 /* KanaKanjiConversionEngine.swift */,
 				EC3DF2C7601C85A9BEFBD2C1 /* KeyboardView.swift */,
 			);
 			path = Shared;
@@ -130,6 +158,7 @@
 			buildConfigurationList = A35EB49772655107EDF6E040 /* Build configuration list for PBXNativeTarget "mykeKeyboard" */;
 			buildPhases = (
 				D38ADDE6FE8BDD5EEF59F808 /* Sources */,
+				FF79FCBAB7E4D53F89151FEA /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +166,7 @@
 			);
 			name = mykeKeyboard;
 			packageProductDependencies = (
+				553F070BBD14A5B19AA4E71B /* KanaKanjiConverterModuleWithDefaultDictionary */,
 			);
 			productName = mykeKeyboard;
 			productReference = 701BDB51E84D400D791A3C9D /* mykeKeyboard.appex */;
@@ -165,6 +195,7 @@
 			buildConfigurationList = A69CD768A418425076E9C6E1 /* Build configuration list for PBXNativeTarget "myke" */;
 			buildPhases = (
 				D7F9863352C8ADA13B264913 /* Sources */,
+				918EC7AC89304375999283D6 /* Frameworks */,
 				5AC1B4102360336E762AF4EC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -174,6 +205,7 @@
 			);
 			name = myke;
 			packageProductDependencies = (
+				854D690C2ECE45005D7535B5 /* KanaKanjiConverterModuleWithDefaultDictionary */,
 			);
 			productName = myke;
 			productReference = 66B2614548DF65B178970908 /* myke.app */;
@@ -189,15 +221,15 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					2115771C670526934EE47E0D = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 4M7Z44967L;
 						ProvisioningStyle = Automatic;
 					};
 					837041E0DFDCEBC580BA93FF = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 4M7Z44967L;
 						ProvisioningStyle = Automatic;
 					};
 					E1DEC15D8F0EDA48ED4FDCE6 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 4M7Z44967L;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,6 +243,9 @@
 			);
 			mainGroup = CC8B0A61BE85C5EF3F16E1E7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				65037157828A5FAAE764EFFD /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 67DE8137C2A5546EFDE3C278 /* Products */;
 			projectDirPath = "";
@@ -229,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2C828C04638D6D8CFB138F /* InputEngine.swift in Sources */,
+				3405AE13906014B74F7AD957 /* KanaKanjiConversionEngine.swift in Sources */,
 				C5ED2BCFE54A040750169092 /* KeyboardView.swift in Sources */,
 				335DF9922C036584C0AC21B3 /* KeyboardViewController.swift in Sources */,
 			);
@@ -240,6 +276,7 @@
 			files = (
 				2085A6AD683EC34A01F18126 /* AppDelegate.swift in Sources */,
 				786FCA7E21F4857F0734275C /* InputEngine.swift in Sources */,
+				75C9C0972AD8EDE7263CE34F /* KanaKanjiConversionEngine.swift in Sources */,
 				7B1E818CBA2BB8F910600B5A /* KeyboardView.swift in Sources */,
 				39092A239B9C2B7A43F9E15A /* SceneDelegate.swift in Sources */,
 				8220213D96450F4590F34527 /* ViewController.swift in Sources */,
@@ -251,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1CA83F376A88B08B0731DA /* InputEngineTests.swift in Sources */,
+				A82E2F65CC2B8531208C2E86 /* KanaKanjiConversionEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +345,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4M7Z44967L;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -383,7 +421,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4M7Z44967L;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -422,7 +460,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sendarionn.myke.keyboard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -443,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sendarionn.myke;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -458,7 +496,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sendarionn.myke.keyboard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -479,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.myke;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sendarionn.myke;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -541,6 +579,30 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65037157828A5FAAE764EFFD /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/azooKey/AzooKeyKanaKanjiConverter";
+			requirement = {
+				kind = exactVersion;
+				version = 0.11.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		553F070BBD14A5B19AA4E71B /* KanaKanjiConverterModuleWithDefaultDictionary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65037157828A5FAAE764EFFD /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */;
+			productName = KanaKanjiConverterModuleWithDefaultDictionary;
+		};
+		854D690C2ECE45005D7535B5 /* KanaKanjiConverterModuleWithDefaultDictionary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65037157828A5FAAE764EFFD /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */;
+			productName = KanaKanjiConverterModuleWithDefaultDictionary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9A01CEE2D6275D8D278DFD6 /* Project object */;
 }

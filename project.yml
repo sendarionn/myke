@@ -1,4 +1,8 @@
 name: myke
+packages:
+  AzooKeyKanaKanjiConverter:
+    url: https://github.com/azooKey/AzooKeyKanaKanjiConverter
+    exactVersion: 0.11.2
 options:
   bundleIdPrefix: com.example
   deploymentTarget:
@@ -9,7 +13,7 @@ settings:
     SWIFT_VERSION: "6.0"
     MARKETING_VERSION: "1.0"
     CURRENT_PROJECT_VERSION: "1"
-    DEVELOPMENT_TEAM: ""
+    DEVELOPMENT_TEAM: 4M7Z44967L
     CODE_SIGN_STYLE: Automatic
 targets:
   myke:
@@ -20,7 +24,7 @@ targets:
       - path: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.myke
+        PRODUCT_BUNDLE_IDENTIFIER: dev.sendarionn.myke
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: myke
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
@@ -29,6 +33,8 @@ targets:
         TARGETED_DEVICE_FAMILY: "1"
     dependencies:
       - target: mykeKeyboard
+      - package: AzooKeyKanaKanjiConverter
+        product: KanaKanjiConverterModuleWithDefaultDictionary
   mykeKeyboard:
     type: app-extension
     platform: iOS
@@ -49,9 +55,12 @@ targets:
             RequestsOpenAccess: false
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.myke.keyboard
+        PRODUCT_BUNDLE_IDENTIFIER: dev.sendarionn.myke.keyboard
         SKIP_INSTALL: YES
         TARGETED_DEVICE_FAMILY: "1"
+    dependencies:
+      - package: AzooKeyKanaKanjiConverter
+        product: KanaKanjiConverterModuleWithDefaultDictionary
   mykeTests:
     type: bundle.unit-test
     platform: iOS

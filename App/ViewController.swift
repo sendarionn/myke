@@ -30,7 +30,7 @@ final class ViewController: UIViewController, KeyboardViewDelegate, UITextViewDe
             keyboardView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             keyboardView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             keyboardView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            keyboardView.heightAnchor.constraint(equalToConstant: 300)
+            keyboardView.heightAnchor.constraint(equalToConstant: 348)
         ])
     }
 
